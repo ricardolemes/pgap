@@ -45,6 +45,7 @@
 	
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
+	<gap:plugin name="dk.interface.cordova.plugin.googlenavigate" version="0.1.2" />
 	
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
