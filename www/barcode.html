@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+ <meta charset="utf-8" />  <meta name="format-detection" content="telephone=yes" />  <meta name="msapplication-tap-highlight" content="no" />
+<title>Untitled Document</title>
+
+ <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript">
+  	function scaner(){
+		cordova.plugins.barcoeScanner.scan(onSuccess, onFail)
+	}
+	
+	function onSuccess(result){
+		var txt = result.text;
+		var forma = result.format;
+		
+		alert(txt +" - "+ forma)
+	}
+	
+	function onFail(erro){
+		alert(erro)
+	}
+  </script>
+
+</head>
+
+<body>
+
+<a href="index.html" class="button">Voltar</a>
+
+<button onclick="scaner()">Abrir</button>
+</body>
+</html>
